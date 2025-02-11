@@ -19,7 +19,7 @@
     ?>
     <h2>Random Password Generator</h2>
     <form action="#" method="post">
-        <input type="text"  value="<?php if(empty($str)){}else{echo $str;} ?>" placeholder="Generate">
+        <input type="text"  value="<?php if(empty(!$str)){echo $str;}?>" placeholder="Generate">
         <input type="submit" value="Generate Password" name="shuffle">
     </form>
 </body>
